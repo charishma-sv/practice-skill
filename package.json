@@ -1,0 +1,23 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charishma-sv/practice-skill.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charishma-sv/practice-skill/issues"
+  },
+  "homepage": "http://charishma-sv.github.io/practice-skill",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

@@ -5,12 +5,12 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = {
-      first: event.target[0].value,
-      last: event.target[1].value,
+      name: event.target[0].value,
+      message: event.target[1].value,
       email: event.target[2].value,
     };
 
-    await fetch('https://hooks.zapier.com/hooks/catch/11075513/bta8oaj/', {
+    await fetch(process.env.REACT_APP_URL, {
       method: 'POST',
       body: JSON.stringify(data),
     })
@@ -29,8 +29,8 @@ function App() {
           <input type="text" name="fname"></input>
         </div>
         <div className="d-flex flex-column w-50">
-          <span>Last Name</span>
-          <input type="text" name="lname"></input>
+          <span>Message</span>
+          <input type="text" name="msg"></input>
         </div>
         <div className="d-flex flex-column w-50">
           <span>Email</span>
